@@ -10,6 +10,7 @@ namespace BBSData.Models
     {
         public string SalesPerson { get; set; }
         public int Quarter { get; set; }
+        public int Year { get; set; }
         public decimal SalesCommission { get; set; }
     }
 }

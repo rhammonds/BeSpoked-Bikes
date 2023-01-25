@@ -13,6 +13,9 @@
                 @Html.DisplayNameFor(model => model.SalesPerson)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Quarter)
             </th>
             <th>
@@ -22,18 +25,22 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.SalesPerson)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Quarter)
-            </td>
-            <td>
-                $@Html.DisplayFor(modelItem => item.SalesCommission)
-            </td> 
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SalesPerson)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quarter)
+                </td>
+                <td>
+                    $@Html.DisplayFor(modelItem => item.SalesCommission)
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
