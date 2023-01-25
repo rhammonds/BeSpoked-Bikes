@@ -51,7 +51,7 @@ namespace BBSData
 						when Month(s.SalesDate) between 1 and 3 then 1
 						when Month(s.SalesDate) between 4 and 6 then 2
 						when Month(s.SalesDate) between 7 and 9 then 3
-						when Month(s.SalesDate) between 10 and 11 then 4
+						when Month(s.SalesDate) between 10 and 12 then 4
 					end 'Quarter',
                     sum(p.SalePrice * p.CommissionPercentage /100) SalesCommission 
                     from sales s                    
@@ -62,7 +62,7 @@ namespace BBSData
 						when Month(s.SalesDate) between 1 and 3 then 1
 						when Month(s.SalesDate) between 4 and 6 then 2
 						when Month(s.SalesDate) between 7 and 9 then 3
-						when Month(s.SalesDate) between 10 and 11 then 4
+						when Month(s.SalesDate) between 10 and 12 then 4
 					end  ");
             return data.ToList();
         }

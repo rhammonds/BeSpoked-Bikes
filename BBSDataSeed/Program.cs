@@ -13,6 +13,6 @@ Console.WriteLine("Products table seeding complete.");
 new DiscountDataSeed().SeedData();
 Console.WriteLine("Discount table seeding complete.");
 
-new SalesDataSeed().SeedData();
-Console.WriteLine("Sales table seeding complete.");
-Console.ReadKey();
+//new SalesDataSeed().SeedData();
+//Console.WriteLine("Sales table seeding complete.");
+//Console.ReadKey();

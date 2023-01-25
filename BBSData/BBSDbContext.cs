@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BBSData
 {
-    public class BBSDbContext: DbContext//, IBBSDbContext
+    public class BBSDbContext: DbContext
     {
         public IDbSet<Customer> Customers { get; set; }
         public IDbSet<Discount> Discounts { get; set; }
@@ -17,6 +17,7 @@ namespace BBSData
         public IDbSet<Product> Products { get; set; }
         public IDbSet<Sale> Sales { get; set; }
 
+         
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer<BBSDbContext>(null);
